@@ -21,6 +21,8 @@
     --sun-clr: rgb(251, 251, 251, 40%);
     --moon-clr:rgb(251, 251, 251, 80%);
     --history-clr:rgb(251, 251, 251, 100%);
+    --equation:rgb(255, 255, 255, 50%);
+    --solution:rgb(255, 255, 255, 100%);
 }
 
 [data-theme="light"] {
@@ -44,6 +46,8 @@
     --sun-clr: rgb(55, 55, 55, 100%);
     --moon-clr:rgb(55, 55, 55, 40%);
     --history-clr:rgb(55, 55, 55, 80%);
+    --equation:rgb(55, 55, 55, 50%);
+    --solution:rgb(55, 55, 55, 100%);
 }
 
 * {
@@ -137,6 +141,47 @@ body {
     }
 }
 
+.calculate {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    .equation {
+        margin-left: auto;
+        font-family: "Poppins", system-ui;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 22px;
+        margin-top: 30px;
+        color: var(--solution);
+    }
+
+    .solution {
+        display: flex;
+        justify-content: space-between;
+        color: var(--solution);
+        display: none;
+    }
+
+    .remove-equation {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 22px;
+        color: var(--equation);
+    }
+
+    .add-solution{
+        display: flex;
+    }
+}
+
+
+
 .solve {
     width: 400px;
     height: 400px;
@@ -151,12 +196,10 @@ body {
     background-color: var(--back-solve5);
     background-image: linear-gradient(to bottom left, var(--grad-solve1), var(--grad-solve2), var(--grad-solve3), var(--grad-solve4));
     background-blend-mode:multiply;
-}
-
-.solve {
     box-sizing: border-box;
     padding: 34px;
 }
+
 
 .solve .solve1 {
     width: 240px;
@@ -201,6 +244,13 @@ body {
         border: none;
         color: var(--txt-clr);
         font: inherit;
+        cursor: pointer;
+    }
+
+    svg {
+        fill: var(--txt-clr);
+        width: 50px;
+        height: 30px;
         cursor: pointer;
     }
 }
