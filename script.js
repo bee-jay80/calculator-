@@ -12,11 +12,6 @@ console.log(systemSettingLight.matches)
 
 
 
-if(systemSettingDark.matches){
-    document.querySelector("html").setAttribute("data-theme","dark")
-}else {
-    document.querySelector("html").setAttribute("data-theme","light")
-}
 
 function storeTheme(){
     localStorage.setItem("theme", document.querySelector("html").getAttribute("data-theme"))

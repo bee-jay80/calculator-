@@ -21,12 +21,20 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q117 0 198.5-81.5T760-480q0-117-81.5-198.5T480-760q-69 0-129 32t-101 88h110v80H120v-240h80v94q51-64 124.5-99T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-120Zm112-192L440-464v-216h80v184l128 128-56 56Z"/></svg>
         </div>
 
+        <div class="calculate">
+            <p class="equation">2 x 2 - 4</p>
+            <h2 class="solution">
+                <span class="operator">=</span>
+                <span class="result"></span>
+            </h2>
+        </div>
+
         <div class="solve">
             <div class="solve1">
                 <div class="row1 row">
-                    <button class="number">AC</button>
-                    <button class="number">Quad</button>
-                    <button class="number">%</button>
+                    <button class="clear">AC</button>
+                    <button class="">Quad</button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="delete" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/></svg>
                 </div>
                 <div class="row">
                     <button class="number">1</button>
@@ -46,16 +54,16 @@
                 <div class="row">
                     <button class="number">.</button>
                     <button class="number">0</button>
-                    <button class="number">00</button>
+                    <button class="number">%</button>
                 </div>
             </div>
             <!-- Signs -->
             <div class="solve2">
-                <button>÷</button>
-                <button>×</button>
-                <button>–</button>
-                <button>+</button>
-                <button>=</button>
+                <button class="sign">÷</button>
+                <button class="sign">×</button>
+                <button class="sign">–</button>
+                <button class="sign">+</button>
+                <button id="solve">=</button>
             </div>
         </div>
 
