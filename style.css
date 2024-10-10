@@ -178,6 +178,29 @@ body {
     .add-solution{
         display: flex;
     }
+
+    .quad_input {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quad_input input[type="text"] {
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--back-solve3);
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--txt-clr);
+    }
+
+    .quad_input input[class="focused"] {
+        border: 2px solid var(--txt-clr);
+    }
 }
 
 
