@@ -65,11 +65,15 @@ body {
 .container {
     width: 400px;
     height: 640px;
-    margin: 5px auto;
     /* gradient */
     background: linear-gradient(to bottom right, var(--grad-cont1), var(--grad-cont2), var(--grad-cont3));
     border-radius: 40px;
     position: relative;
+    /* center */
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
     font-family: "Poppins", system-ui;
     font-weight: 400;
     font-style: normal;
