@@ -209,8 +209,10 @@ function solveQuad(){
     x1 = (-b_val + discriminant) / 2 * a_val
     x2 = (-b_val - discriminant) / 2 * a_val
 
-    solution.classList.add("add-solution")
+    result.classList.add("add-solution")
     screen.classList.add("remove-equation")
+    result.style.display = "";
+    screen.style.display = ""
     quadContainer.style.display = "none"
     
     if(x1.toString().includes(".") || x2.toString().includes(".")){
