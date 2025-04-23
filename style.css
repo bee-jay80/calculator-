@@ -17,7 +17,8 @@
     --back-solve5:rgb(61,118,171,100%);
     --btn-clr:rgb(5,5,5,30%);
     --btn-equal:rgb(5,5,5,20%);
-    --txt-clr:#ffff;
+    /* --txt-clr:#ffff; */
+    --txt-clr:pink;
     --sun-clr: rgb(251, 251, 251, 40%);
     --moon-clr:rgb(251, 251, 251, 80%);
     --history-clr:rgb(251, 251, 251, 100%);
